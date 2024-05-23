@@ -1,0 +1,47 @@
+Este es mi proyecto prueba, Gestión de Empleados realizado con Laravel en el modelo MVC.
+
+Contiene:
+Un navbar el cual puede ver ambos CRUDS y podrá ver su perfil o cerrar sesión si así lo desea.
+CRUD de Empleados:
+- Función de busqueda por cualquier item, desde nombre hasta telefono.
+- Paginación de un máximo de 3 registros para que se pueda apreciar la misma.
+- Relación entre tabla Departamentos, debajo del registro sale a qué departamento pertece el empleado.
+- Botones de acciones respectivas.
+- Al crear nuevo empleado, deberá ocupar todos los campos para que sea correcto la creación, de lo contrario saldrá un mensaje alertadiciendo qué campos olvidó.
+- El de editar tendrá que no tener ningún campo vacío o también saltará una alerta.
+- Al eliminar tiene un mensaje de confirmación.
+
+CRUD de Departamentos:
+- Función de busqueda por cualquier item, desde nombre hasta telefono.
+- Paginación de un máximo de 3 registros para que se pueda apreciar la misma.
+- Botones de acciones respectivas
+- Al crear nuevo departamento, deberá ocupar todos los campos para que sea correcto la creación, de lo contrario saldrá un mensaje alertadiciendo qué campos olvidó.
+- El de editar tendrá que no tener ningún campo vacío o también saltará una alerta.
+- Al eliminar tiene un mensaje de confirmación.
+
+**NOTA:** Si no hay registros ya en las tablas, es un error de Laravel, trate de solucionarlo poniendo el codigo "php artisan storage:link" confirma la acción y debería de funcionar, de lo contrario podría adjuntar usted mismo registros, gracias por su comprensión.
+
+Perfil Usuario:
+- Una interfaz sencilla donde muestra el nombre y correo del usuario logueado.
+- Botón editar, el cual llevará a un formulario para poder editar sus datos.
+- Dentro del formulario, hay 2 botones, Actualizar y Cancelar.
+
+Se Recomienda Para su Uso:
+- Versión Laravel: 11
+- Versión PHP: 8.2.12
+- Versión Composer: 2.7.2
+- En Visual Estudio Code
+- Pruebas con navegador Edge y Chrome
+- Apache
+- PHPMyAdmin
+- XAMPP
+- MySQL
+- Versión Node.js: 20.12.0
+
+Como Usarlo de Manera Local en Otro Ordenador:
+- Lo integramos a la ruta de los proyectos, C:/User/Xampp/htdocs.
+- Iniciaremos con la creación de la base de datos, como yo lo trabajé directamente con comandos, pondremos en la terminal el comando "php artisan migrate" y nos saldrá un mensaje que si queremos crear la base de datos, escribiremos "yes".
+- Yo trabajé con el entorno de "npm" así que escribiremos el comando "npm run dev" y accederemos desde el navegador con "localhost/ruta_proyecto" teniendo ya encedidos en el XAMPP, tanto el Apache y el MySQL.
+
+Realizar Pruebas Unitarias:
+- Estando en npm apagado, realizaremos la prueba, para ello usaremos el comando "php artisan test tests/Unit/EmpleadosTest.php" damos enter y ya nos saldrá el resultado de la inserción de datos a la tabla Empleados.
